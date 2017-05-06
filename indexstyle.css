@@ -36,7 +36,7 @@ button {
 p {
   font-size: 48px;
   color: white;
-  text-shadow: 3px 2px red;
+  text-shadow: 3px 2px #ff0090;
 }
 body {
   background-color: #ff0090;
