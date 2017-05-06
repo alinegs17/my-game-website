@@ -57,10 +57,10 @@ function getUserGuess() {
         /* user guessed a number */
         num_guesses += 1;
         if (user_guess > secret_number) {
-            document.getElementById("output").innerHTML = "Guess lower";
+            document.getElementById("output").innerHTML = "Guess lower than " + user_guess;
         }
         else if (user_guess < secret_number) {
-            document.getElementById("output").innerHTML = "Guess higher";
+            document.getElementById("output").innerHTML = "Guess higher than " + user_guess;
         }
         else { /* user has guessed the secret number */
             num_games_played += 1;
