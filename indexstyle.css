@@ -1,5 +1,8 @@
 div {
   border: 2px solid #8A2BE2;
+  background-color: cornsilk;
+  text-align: center;
+  width: 720px;
 }
 #top-bar {
   background-color: #B0E0E6;
@@ -24,4 +27,7 @@ button {
   font-size: 45px;
   margin:4px 2px;
   cursor: pointer;
+}
+p {
+  font-size: 48px;
 }
