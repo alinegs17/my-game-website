@@ -1,6 +1,7 @@
 div {
   border: 4px solid #f4d942;
-  background-image: url(http://wallpaper-gallery.net/images/vector-image/vector-image-12.jpg);
+  /*background-image: url(http://wallpaper-gallery.net/images/vector-image/vector-image-12.jpg);*/
+  background-image: url("bgdesert.jpg");
   text-align: center;
   width: 720px;
   padding: 40px;
