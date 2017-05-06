@@ -50,8 +50,8 @@ function startGame() {
 
 function getUserGuess() {
     var user_guess = document.getElementById("numberGuess").value;
-    if (user_guess === null) {
-        document.getElementById("output").innerHTML = "Goodbye!";
+    if (user_guess <= 0) {
+        document.getElementById("output").innerHTML = "You entered a incorrect value. Guess again";
     }
     else { 
         /* user guessed a number */
@@ -68,6 +68,7 @@ function getUserGuess() {
             var average_score = total_score/num_games_played;
             document.getElementById("output").innerHTML = "Congrats you have guessed the number " + secret_number + " in " + num_guesses + " guesses!" + " Your average score in " + num_games_played + " games is " + average_score;      
         }
+        document.getElementById("numberGuess").value = " ";
     } 
 }
 </script>
