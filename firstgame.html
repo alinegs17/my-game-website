@@ -66,7 +66,7 @@ function getUserGuess() {
             num_games_played += 1;
             total_score += num_guesses;
             var average_score = total_score/num_games_played;
-            document.getElementById("output").innerHTML = "Congrats you have guessed the number " + secret_number + " in " + num_guesses + " guesses!" + " Your average score in " + num_games_played + " games is " + average_score;      
+            document.getElementById("output").innerHTML = "Congrats you have guessed the number " + secret_number + " in " + num_guesses + " guesses!\n" + " Your average score in " + num_games_played + " games is " + average_score + ".";      
         }
         document.getElementById("numberGuess").value = " ";
     } 
