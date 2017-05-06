@@ -147,6 +147,7 @@
          for(i = 0; i < myCatches.length; i += 1 ) {
             if (myGamePanel.pointMade(myCatches[i])) {
                 myScore += 1;
+                myCatches.splice(i, 1);
             }
          }         
         
