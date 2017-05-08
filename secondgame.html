@@ -155,7 +155,7 @@
         myGameArea.frameNo += 1;
         myGameArea.clear();
         // Creates a new obstacle or catch every 150th frame
-        if (myGameArea.frameNo == 1 || everyInterval(150)) {
+        if (myGameArea.frameNo == 1 || everyInterval(125)) {
             var minX = 10;
             var maxX = myGameArea.canvas.width - 20;
             var x = (Math.random() * (maxX - minX)) + minX;
