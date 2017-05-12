@@ -51,10 +51,10 @@
           document.body.insertBefore(this.canvas, document.body.childNodes[0]);
           this.interval = setInterval(updateGameArea, 20);
           window.addEventListener('keydown', function (e) {
-          myGameArea.key = e.keyCode;
+              myGameArea.key = e.keyCode;
           })
           window.addEventListener('keyup', function (e) {
-          myGameArea.key = false;
+              myGameArea.key = false;
           })
           this.frameNo = 0;
         },
@@ -162,10 +162,10 @@
         myGameArea.clear();
         myGamePanel.speedX = 0;
         myGamePanel.speedY = 0; 
-        if (myGameArea.key && myGameArea.key == 37) {myGamePanel.speedX = -1; }
-        if (myGameArea.key && myGameArea.key == 39) {myGamePanel.speedX = 1; }
-        if (myGameArea.key && myGameArea.key == 38) {myGamePanel.speedY = -1; }
-        if (myGameArea.key && myGameArea.key == 40) {myGamePanel.speedY = 1; }
+        if (myGameArea.keys && myGameArea.keys[37]) {myGamePanel.speedX = -1; }
+    	if (myGameArea.keys && myGameArea.keys[39]) {myGamePanel.speedX = 1; }
+    	if (myGameArea.keys && myGameArea.keys[38]) {myGamePanel.speedY = -1; }
+    	if (myGameArea.keys && myGameArea.keys[40]) {myGamePanel.speedY = 1; }
         // Creates a new obstacle or catch every 150th frame
         if (myGameArea.frameNo == 1 || everyInterval(50)) {
             var minX = 10;
